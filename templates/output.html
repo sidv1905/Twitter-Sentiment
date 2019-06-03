@@ -22,17 +22,19 @@
     
                                 <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
     {% if posarray %}
-    <h1>{{positivation}}</h1>
-    <h2>{{negation}}</h2>
-    <h3>{{neutraly}}</h3>
+  
     
-    <h5>Positive tweets</h5>
+    <h2>Positive tweets</h2>
     {% for ptweets in posarray %}
-    <p>{{ptweets}}</p>
+    <ol>
+    <li>{{ptweets}}</li>
+</ol>
     {% endfor %}
-    <h5>Negative tweets</h5>
+    <h2>Negative tweets</h2>
     {% for ntweets in negarray %}
-    <p>{{ntweets}}</p>
+    <ol>
+    <li>{{ntweets}}</li>
+</ol>
     {% endfor %}
     {% else %}
     {% endif %}
