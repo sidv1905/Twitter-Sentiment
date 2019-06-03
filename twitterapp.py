@@ -13,10 +13,10 @@ def index():
             def __init__(self): 
                 '''Class constructor or initialization method.'''
                 # keys and tokens from the Twitter Dev Console 
-                consumer_key = '4SWuVSQN3dvAavxo1Cxe2db3A'
-                consumer_secret = 'haviJO27ZOHgNCdIzqrTVXMXQDeG1FUIB1kE7knVXfSDxRkcSF'
-                access_token = '1134196924939001856-11ydMR6P9tMr5aHy7Urp9rI3wPvoSx'
-                access_token_secret = 'CIKUqDf9bs0zpHZBw9sZvHnovaujAJyi2Iz9s1SskdKuZ'
+                consumer_key = 'XXXXXXXXXXXXXXXX'
+                consumer_secret = 'XXXXXXXXXXXXXXXXXXX'
+                access_token = 'XXXXXXXXXXXXXXXXXXXXXXXXXX'
+                access_token_secret = 'XXXXXXXXXXXXXXXXXXXXX'
                 # attempt authentication 
                 try: 
                     # create OAuthHandler object 
