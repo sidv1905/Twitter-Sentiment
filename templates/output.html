@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- Numeric JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+    
+       
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+  
+</head>
+<body>
+        <div id="demo1"  value="{{positivation}}">
+                <div id="demo2"   value="{{negation}}">
+                        <div id="demo3" value="{{neutraly}}">
+
+    
+                                <div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+    {% if posarray %}
+    <h1>{{positivation}}</h1>
+    <h2>{{negation}}</h2>
+    <h3>{{neutraly}}</h3>
+    
+    <h5>Positive tweets</h5>
+    {% for ptweets in posarray %}
+    <p>{{ptweets}}</p>
+    {% endfor %}
+    <h5>Negative tweets</h5>
+    {% for ntweets in negarray %}
+    <p>{{ntweets}}</p>
+    {% endfor %}
+    {% else %}
+    {% endif %}
+</body>
+<script src="{{ url_for('static', filename='js/java.js') }}"></script>
+</html>

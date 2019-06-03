@@ -120,7 +120,7 @@ def index():
                 print(negarray)
 
             main()
-            return render_template('index.html',positivation=positivation,negation=negation,neutraly=neutraly,negarray=negarray,posarray=posarray)
+            return render_template('output.html',positivation=positivation,negation=negation,neutraly=neutraly,negarray=negarray,posarray=posarray)
         except:
             return '<p>Pappu not here<p>'     
     return render_template('index.html')

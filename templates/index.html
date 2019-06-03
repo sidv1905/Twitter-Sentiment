@@ -5,27 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Twittery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+  
 </head>
 <body>
     <form action="/" method="POST">
-        <input name="accountname" type="text">Enter Hashtag/Twitter account:
+        <div class="container">
+            <input name="accountname" type="text" placeholder="Search...">
+            <div class="search"></div>
+          </div>
     </form>
-    {% if posarray %}
-    <h1>{{positivation}}</h1>
-    <h2>{{negation}}</h2>
-    <h3>{{neutraly}}</h3>
     
-    <h5>Positive tweets</h5>
-    {% for ptweets in posarray %}
-    <p>{{ptweets}}</p>
-    {% endfor %}
-    <h5>Negative tweets</h5>
-    {% for ntweets in negarray %}
-    <p>{{ntweets}}</p>
-    {% endfor %}
-    {% else %}
-    {% endif %}
     
     
 </body>
+
 </html>
